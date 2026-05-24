@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Visualizer Mata Uang",
+  "description": "Visualisasi input jumlah uang dengan pemilih mata uang interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
