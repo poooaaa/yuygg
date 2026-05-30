@@ -449,7 +449,7 @@ export default function App() {
                 onClick={() => handleIndividualClick(person)}
                 whileHover={{ scale: 0.98 }}
                 whileTap={{ scale: 0.95 }}
-                className="relative w-[210px] h-fit flex-shrink-0 bg-zinc-950/40 border border-white/10 hover:border-white/20 rounded-2xl overflow-hidden cursor-pointer snap-center group shadow-md flex flex-col"
+                className="relative w-[252px] h-fit flex-shrink-0 bg-zinc-950/40 border border-white/10 hover:border-white/20 rounded-2xl overflow-hidden cursor-pointer snap-center group shadow-md flex flex-col"
               >
               {/* Image part: Landscape, no text overlay to avoid visual disturbance */}
               <div className="w-full aspect-[16/10] overflow-hidden bg-zinc-950 border-b border-white/10">
@@ -466,19 +466,19 @@ export default function App() {
               </div>
 
               {/* Text content placed cleaner below image so the image has zero text overlay on top of face */}
-              <div className="p-3 flex flex-col justify-start gap-1">
+              <div className="p-3.5 flex flex-col justify-start gap-1.5">
                 <div>
-                  <h3 className="text-[11px] font-black text-white truncate tracking-wide leading-tight">
+                  <h3 className="text-[13px] font-black text-white truncate tracking-wide leading-tight">
                     {person.name}
                   </h3>
-                  <p className="text-[8.5px] font-semibold text-zinc-400 truncate uppercase tracking-widest leading-none mt-0.5">
+                  <p className="text-[10px] font-semibold text-zinc-400 truncate uppercase tracking-widest leading-none mt-1">
                     {person.company}
                   </p>
                 </div>
                 
                 {/* Clean dark glass container with dots format wealth display inside */}
-                <div className="mt-0.5 bg-white/5 border border-white/10 rounded-lg py-1 text-center backdrop-blur-sm">
-                  <span className="text-[10px] font-mono font-bold text-white tracking-tight">
+                <div className="mt-1 bg-white/5 border border-white/10 rounded-lg py-1.5 text-center backdrop-blur-sm">
+                  <span className="text-[12px] font-mono font-bold text-white tracking-tight">
                     {formatWealthDots(person.netWorthUsd)}
                   </span>
                 </div>
@@ -702,10 +702,10 @@ export default function App() {
                   href={news.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex items-center gap-3 bg-black/40 border border-zinc-800/80 hover:border-zinc-700 rounded-2xl p-2.5 shadow-inner hover:bg-zinc-900/50 transition-all duration-300"
+                  className="group relative flex items-center gap-4 bg-black/40 border border-zinc-800/80 hover:border-zinc-700 rounded-2xl p-3 shadow-inner hover:bg-zinc-900/50 transition-all duration-300"
                 >
                   {/* Image */}
-                  <div className="w-[64px] h-[64px] rounded-xl overflow-hidden shrink-0 border border-white/5 relative">
+                  <div className="w-[76px] h-[76px] rounded-xl overflow-hidden shrink-0 border border-white/5 relative">
                     <img
                       src={news.image}
                       alt={news.title}
@@ -716,11 +716,11 @@ export default function App() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex flex-col justify-center gap-1 pr-2 w-full h-full">
-                    <h3 className="text-[11px] font-bold text-white leading-[1.35] line-clamp-2 group-hover:text-zinc-200 transition-colors">
+                  <div className="flex flex-col justify-center gap-1.5 pr-2 w-full h-full">
+                    <h3 className="text-[13px] font-bold text-white leading-[1.35] line-clamp-2 group-hover:text-zinc-200 transition-colors">
                       {news.title}
                     </h3>
-                    <div className="flex justify-between items-center text-[9px] font-semibold text-zinc-500 uppercase tracking-wide mt-auto pt-1">
+                    <div className="flex justify-between items-center text-[11px] font-semibold text-zinc-500 uppercase tracking-wide mt-auto pt-1">
                       <span>{news.publisher}</span>
                       <span className="flex items-center gap-1">
                         {news.date}
