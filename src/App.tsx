@@ -395,7 +395,7 @@ export default function App() {
 
   return (
     <div className="h-screen w-full bg-black text-white font-sans select-none overflow-y-auto overflow-x-hidden relative">
-      <div className="flex flex-col items-center justify-center min-h-full py-8 px-4 gap-4 w-full">
+      <div className="flex flex-col items-center justify-center min-h-full gap-2 w-full">
       
       {/* Centered Dark Premium Container */}
       <motion.div 
@@ -403,7 +403,7 @@ export default function App() {
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full max-w-sm h-fit bg-zinc-950 border border-zinc-900 rounded-[32px] p-5 flex flex-col gap-2 relative overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.95)]"
+        className="w-full max-w-full h-fit bg-zinc-950 border-y border-zinc-900 p-5 md:p-8 flex flex-col gap-4 relative overflow-hidden"
       >
         {/* Top hairline border accent */}
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-zinc-800 to-transparent pointer-events-none" />
@@ -604,7 +604,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.98 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="w-full max-w-sm h-fit bg-zinc-950 border border-zinc-900 rounded-[32px] p-5 flex flex-col gap-4 relative overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.95)]"
+            className="w-full max-w-full h-fit bg-zinc-950 border-y border-zinc-900 p-5 md:p-8 flex flex-col gap-4 relative overflow-hidden"
           >
             {/* Top hairline border accent */}
             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-zinc-800 to-transparent pointer-events-none" />
@@ -661,7 +661,7 @@ export default function App() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-sm mt-4 mb-8 flex flex-col gap-3 bg-zinc-950 border border-zinc-900 rounded-[32px] p-5 relative overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.95)]"
+          className="w-full max-w-full mt-2 mb-0 flex flex-col gap-4 bg-zinc-950 border-y border-zinc-900 p-5 md:p-8 relative overflow-hidden"
         >
           {/* Top hairline border accent */}
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-zinc-800 to-transparent pointer-events-none" />
